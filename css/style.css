@@ -14,7 +14,7 @@ body {
 
 .container {
     margin: auto;
-    /* overflow: hidden; */
+    overflow: hidden;
     width: 90%;
 }
 
@@ -35,6 +35,7 @@ body {
 #main-heading {
     text-align: center;
     margin: 15px 0;
+    font-weight: 400;
 }
 
 .plan-container {
@@ -46,6 +47,15 @@ body {
     border: 4px solid #888080;
     text-align: center;
     position: relative;
+}
+
+.subscription-plan {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.heading {
+    text-align: center;
 }
 
 .card1 {
@@ -126,8 +136,22 @@ body {
     margin-bottom: -10px;
 }
 
-.without-extra-featue h3{
- margin-top: 159px;
+.without-extra-featue h3 {
+    margin-top: 159px;
+}
+
+body .btn,
+x:-moz-any-link,
+x:default {
+    position: absolute;
+    color: white;
+    border: none;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 10px 10px;
+    width: 150px;
+    top: 480px;
+    left: 25px;
 }
 
 .btn {
@@ -158,7 +182,7 @@ body {
     background: #EEA12F;
 }
 
-footer{
+footer {
     height: 8%;
     background: #f9f9f9;
     margin-top: 50px;
@@ -167,7 +191,7 @@ footer{
     font-weight: bold;
 }
 
-footer a{
+footer a {
     color: black;
 }
 
@@ -176,12 +200,21 @@ footer a{
         display: block;
         text-align: center;
     }
-
-    .card1{
+    .card1 {
         margin: 0 110px;
     }
-
-    .card2{
+    .card2 {
         margin: 40px 110px;
+    }
+    body .btn-1 {
+        position: absolute;
+        color: white;
+        border: none;
+        font-size: 14px;
+        font-weight: 600;
+        padding: 10px 10px;
+        width: 150px;
+        top: 425px;
+        left: 25px;
     }
 }

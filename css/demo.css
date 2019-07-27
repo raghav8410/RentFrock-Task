@@ -1,0 +1,80 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.container {
+    margin: auto;
+    overflow: hidden;
+    width: 100%;
+}
+
+.sidenav {
+    width: 14vw;
+    text-align: center;
+    background-color: white;
+    height: 100vh;
+}
+
+.sidenav a {
+    display: inline-block;
+    padding-top: 40px;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+
+/*
+.main {
+    margin-left: 14vw;
+    margin-top: -600px;
+}
+
+.banner {
+    width: 86vw;
+    height: 65vh;
+}
+
+.main h2 {
+    color: black;
+    margin: 30px 25px;
+    position: relative;
+}
+
+.main h2::before {
+    content: '';
+    position: absolute;
+    height: 5px;
+    width: 60px;
+    background: #FFce07;
+    top: 30px;
+}
+
+.main p {
+    margin: 20px 25px;
+    text-align: justify;
+    font-size: 18px;
+}
+
+footer {
+    display: flex;
+    text-align: center;
+    background-color: #333333;
+}
+
+footer h3 {
+    color: white;
+}
+
+footer ul {
+    list-style: none;
+    margin-right: 50px;
+}
+
+footer a {
+    text-decoration: none;
+    color: white;
+}
+
+*/
