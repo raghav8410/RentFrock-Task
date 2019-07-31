@@ -1,212 +1,263 @@
-body {
-    margin: 0;
-    padding: 0;
-    background-color: white;
-}
-
-.inconsolata-font-family {
-    font-family: Inconsolata;
-}
-
-.montserrat-font-family {
-    font-family: Montserrat;
-}
-
-.container {
-    margin: auto;
-    overflow: hidden;
-    width: 90%;
-}
-
-#logo {
-    height: 10%;
-    width: 5%;
-}
-
-#faq {
-    float: right;
-    padding: 10px 10px;
-    border: 1px solid black;
-    color: black;
-    text-decoration: none;
-    margin-top: 10px;
-}
-
-#main-heading {
-    text-align: center;
-    margin: 15px 0;
-    font-weight: 400;
-}
-
-.plan-container {
-    display: flex;
-}
-
-.card {
-    width: 200px;
-    border: 4px solid #888080;
-    text-align: center;
-    position: relative;
-}
-
-.subscription-plan {
-    display: flex;
-    justify-content: space-evenly;
-}
-
-.heading {
-    text-align: center;
-}
-
-.card1 {
-    margin-left: 170px;
-    margin-right: 91px;
-}
-
-.card2 {
-    margin: 0 20px;
-}
-
-.card h4 {
-    margin-top: 8px;
-}
-
-#saving {
-    margin-top: -12px;
-    font-size: 12px;
-}
-
-.card h2 {
-    font-size: 23px;
-    font-weight: bold;
-    margin-top: -13px;
-}
-
-.underline {
-    position: relative;
-}
-
-.underline::before {
-    content: '';
-    position: absolute;
-    background: #ECECEC;
-    height: 1.5px;
-    width: 150px;
-    bottom: -10px;
-    right: 25px;
-}
-
-#description {
-    text-align: justify;
-    font-size: 12px;
-}
-
-.card h3 {
-    font-size: 17px;
-}
-
-.card h5 {
-    font-size: 17px;
-}
-
-#tax {
-    font-size: 10px;
-}
-
-#regular-price {
-    font-size: 11px;
-    letter-spacing: 1px;
-    font-style: italic;
-    margin-top: -10px;
-    margin-bottom: 20px;
-}
-
-#additional-offer li {
-    margin-right: 50px;
-    list-style-type: none;
-}
-
-#additional-offer {
-    font-size: 14px;
-}
-
-.extra-feature {
-    font-size: 13px;
-    margin-top: -20px;
-    margin-bottom: -10px;
-}
-
-.without-extra-featue h3 {
-    margin-top: 159px;
-}
-
-body .btn,
-x:-moz-any-link,
-x:default {
-    position: absolute;
-    color: white;
-    border: none;
-    font-size: 14px;
-    font-weight: 600;
-    padding: 10px 10px;
-    width: 150px;
-    top: 480px;
-    left: 25px;
-}
-
-.btn {
-    position: absolute;
-    color: white;
-    border: none;
-    font-size: 14px;
-    font-weight: 600;
-    padding: 10px 10px;
-    width: 150px;
-    top: 420px;
-    left: 25px;
-}
-
-.btn-plan-1 {
-    background: #535989;
-}
-
-.btn-plan-2 {
-    background: #71775C;
-}
-
-.btn-plan-3 {
-    background: #CB5625;
-}
-
-.btn-plan-4 {
-    background: #EEA12F;
-}
-
-footer {
-    height: 8%;
-    background: #f9f9f9;
-    margin-top: 50px;
-    text-align: center;
-    font-size: 13px;
-    font-weight: bold;
-}
-
-footer a {
-    color: black;
-}
-
-@media(max-width:768px) {
+    body {
+        margin: 0;
+        padding: 0;
+        background-color: white;
+    }
+    
+    .inconsolata-font-family {
+        font-family: Inconsolata;
+    }
+    
+    .montserrat-font-family {
+        font-family: Montserrat;
+    }
+    
+    .container {
+        margin: auto;
+        overflow: hidden;
+        width: 90%;
+    }
+    
+    #logo {
+        height: 10%;
+        width: 5%;
+    }
+    
+    #faq {
+        float: right;
+        padding: 10px 10px;
+        border: 1px solid black;
+        color: black;
+        text-decoration: none;
+        margin-top: 10px;
+    }
+    
+    #main-heading {
+        text-align: center;
+        margin: 15px 0;
+        font-weight: 400;
+        padding: 30px 0;
+    }
+    
     .plan-container {
+        display: flex;
+    }
+    
+    .content {
+        display: none;
+        margin: 10px;
+        padding: 10px;
+        border: 2px solid black;
+        width: 300px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background: red;
+    }
+    
+    .content p {
+        text-align: justify;
+        font-size: 12px;
+    }
+    
+    .content:hover {
         display: block;
+    }
+    
+    .info {
+        position: absolute;
+        top: 62%;
+        left: 87%;
+        transform: translate(-50%, -50%);
+        cursor: pointer;
+    }
+    
+    .info:hover+.content {
+        display: block;
+    }
+    
+    .card {
+        width: 200px;
+        border: 4px solid #888080;
+        text-align: center;
+        position: relative;
+    }
+    
+    .subscription-plans {
+        margin-left: 11%;
+        max-width: 79%;
+        background-color: #F7F5F9;
+    }
+    
+    .subscription-plan {
+        display: flex;
+        justify-content: space-evenly;
+        justify-content: space-around;
+    }
+    
+    .subscription-plan-number {
+        margin-top: 20px;
+        font-weight: 600;
+        text-transform: uppercase;
+    }
+    
+    .rent-pieces {
+        font-weight: 600;
+        margin-bottom: 0px;
+    }
+    
+    .picked {
+        font-size: 15px;
+        margin-top: 4px;
+    }
+    
+    .swap {
+        text-align: center;
+        font-weight: 600;
+        display: inline-block;
+        margin-bottom: 0px;
+    }
+    
+    .total-pieces {
+        font-size: 13px;
+        margin-top: 0px;
+    }
+    
+    .heading {
+        text-align: center;
+        padding: 15px 0 0 0;
+        font-weight: 500;
+    }
+    
+    #subscription-description {
+        font-family: Lato;
+        font-size: 17px;
+        text-align: center;
+        margin-bottom: 27px;
+        padding-top: 24px;
+    }
+    
+    .subscription-amount {
+        margin: 30px 0 20px;
+        font-size: 18px;
+    }
+    
+    .card1 {
+        margin-left: 170px;
+        margin-right: 91px;
+    }
+    
+    .card2 {
+        margin: 0 20px;
+    }
+    
+    .card h4 {
+        margin-top: 8px;
+    }
+    
+    #saving {
+        margin-top: -12px;
+        font-size: 12px;
+    }
+    
+    .card h2 {
+        font-size: 23px;
+        font-weight: bold;
+        margin-top: -13px;
+    }
+    
+    .most-popular-card {
+        position: relative;
+    }
+    
+    .most-popular {
+        position: absolute;
+        color: #fff;
+        font-size: 14px;
+        padding-top: 10px;
+        top: 95.5%;
+        right: 23.5%;
+        background-color: #000;
+        border-radius: 50%;
+        height: 53px;
+        width: 63px;
         text-align: center;
     }
-    .card1 {
-        margin: 0 110px;
+    
+    .underline {
+        position: relative;
     }
-    .card2 {
-        margin: 40px 110px;
+    
+    .underline::before {
+        content: '';
+        position: absolute;
+        background: #ECECEC;
+        height: 1.5px;
+        width: 150px;
+        bottom: -10px;
+        right: 25px;
     }
-    body .btn-1 {
+    
+    #description {
+        text-align: justify;
+        font-size: 12px;
+    }
+    
+    .card h3 {
+        font-size: 17px;
+    }
+    
+    .card h5 {
+        font-size: 17px;
+    }
+    
+    #tax {
+        font-size: 10px;
+    }
+    
+    #regular-price {
+        font-size: 11px;
+        letter-spacing: 1px;
+        font-style: italic;
+        margin-top: -15px;
+        margin-bottom: 20px;
+    }
+    
+    #additional-offer li {
+        list-style-type: none;
+        text-align: justify
+    }
+    
+    #additional-offer {
+        font-size: 12px;
+    }
+    
+    .extra-feature {
+        font-size: 13px;
+        margin-top: -20px;
+        margin-bottom: -10px;
+    }
+    
+    .without-extra-featue h3 {
+        margin-top: 159px;
+    }
+    
+    body .btn,
+    x:-moz-any-link,
+    x:default {
+        position: absolute;
+        color: white;
+        border: none;
+        font-size: 14px;
+        font-weight: 600;
+        padding: 10px;
+        width: 175px;
+        top: 414px;
+        left: 12px;
+    }
+    
+    .btn {
         position: absolute;
         color: white;
         border: none;
@@ -214,7 +265,135 @@ footer a {
         font-weight: 600;
         padding: 10px 10px;
         width: 150px;
-        top: 425px;
+        top: 420px;
         left: 25px;
     }
-}
+    
+    .btn-plan-1 {
+        background: #535989;
+    }
+    
+    .btn-plan-2 {
+        background: #71775C;
+    }
+    
+    .btn-plan-3 {
+        background: #CB5625;
+    }
+    
+    .btn-plan-4 {
+        background: #EEA12F;
+    }
+    
+    footer {
+        height: 8%;
+        background: #f9f9f9;
+        margin-top: 80px;
+        text-align: center;
+        font-size: 13px;
+        font-weight: bold;
+    }
+    
+    .terms {
+        font-size: 11px;
+        position: absolute;
+        padding-top: 15px;
+        width: 16%;
+        padding-left: 30px;
+    }
+    
+    footer a {
+        color: black;
+    }
+    
+    .faq-body {
+        border: 1px solid #888;
+        margin: 50px;
+        text-align: justify;
+        font-family: Lato;
+        font-size: 13px;
+    }
+    
+    .faq {
+        background-color: #F7F5F9;
+    }
+    
+    .faq-body h4 {
+        font-size: 19px;
+        text-align: center;
+        font-family: Inconsolata;
+        font-weight: 800;
+    }
+    
+    .faq-body div {
+        padding: 1% 2% 0 4.5%;
+    }
+    
+    @media(max-width:768px) {
+        .plan-container {
+            display: block;
+        }
+        .card {
+            margin-bottom: 20px;
+        }
+        .card1 {
+            margin: 0 110px;
+            margin-left: 36vw;
+        }
+        .card2 {
+            margin: 40px 110px;
+            margin-left: 36vw;
+        }
+        body .btn-1 {
+            position: absolute;
+            color: white;
+            border: none;
+            font-size: 14px;
+            font-weight: 600;
+            padding: 10px 10px;
+            width: 150px;
+            top: 425px;
+            left: 25px;
+        }
+        .subscription-plan {
+            display: block;
+            margin-left: 25vw;
+        }
+        #subscription-description {
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+        .most-popular {
+            top: 192%;
+            right: 31.5%;
+        }
+        .terms {
+            font-size: 11px;
+            position: relative;
+            width: 25%;
+            padding-left: 287px;
+        }
+    }
+    
+    @media(max-width:400px) {
+        .subscription-plan {
+            margin-left: 9vw;
+        }
+        .card1 {
+            margin-left: 20vw;
+        }
+        .card2 {
+            margin-left: 20vw;
+        }
+        .most-popular {
+            top: 309.5%;
+            right: 9.5%;
+        }
+        .terms {
+            font-size: 11px;
+            position: relative;
+            padding-top: -25px;
+            width: 52%;
+            padding-left: 84px;
+        }
+    }

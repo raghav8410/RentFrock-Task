@@ -3,6 +3,8 @@
 <head>
     <title>rfr</title>
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css">
+
 </head>
 
 <body>
@@ -10,7 +12,7 @@
         <div class="container">
             <div>
                 <img src="./images/LOGO_page-0001.jpg" id="logo">
-                <a id="faq" class="inconsolata-font-family" href="#">FAQ</a>
+                <a id="faq" class="inconsolata-font-family" href="./faq.html">FAQ</a>
             </div>
         </div>
     </header>
@@ -19,24 +21,36 @@
     <h2 class="inconsolata-font-family heading">SUBSCRIPTION PLANS</h2>
 
     <div class="subscription-plans">
-        <p style="text-align: -webkit-center;">Whether you want to use us every month or a few times a year, either plan is totally<br> flexible. Pause, cancel, upgrade your plan at anytime.</p>
+        <p id="subscription-description">Whether you want to use us every month or a few times a year, either plan is totally<br> flexible. Pause, cancel, upgrade your plan at anytime.</p>
 
         <div class="subscription-plan">
             <div id="subscritption-plan-1" class="card">
                 <p class="subscription-plan-number">PLAN 1</p>
                 <p class="rent-pieces">Rent 4 pieces/month</p>
                 <p class="picked">Picked by you or a stylist</p>
-                <p class="swap">Swap 1 piece,once a month</p>
-                <p class="total-pieces">Giving you up to 5 total pieces/month</p>
-                <h5 class="subscription-amount">$99/month</h5>
+                <p class="swap">Swap 1 piece,<br>once a month</p>
+                <span class='info'><i class="fa fa-info-circle"></i></span>
+                <div class='content'>
+                    <p>4 pieces:</br> A swap means that once a month, you can send back 1 piece of your 4 piece box and receive something different. Whether it’s because you want something new or you’re just not in love with one of the items, a swap gives
+                        you flexibility and more variety.</p>
+                </div>
+
+                <p class="total-pieces">Giving you up to 5 total<br> pieces/month</p>
+                <h4 class="subscription-amount">$99/month</h4>
             </div>
             <div id="subscritption-plan-1" class="card">
                 <p class="subscription-plan-number">PLAN 1</p>
                 <p class="rent-pieces">Rent 4 pieces/month</p>
                 <p class="picked">Picked by you or a stylist</p>
-                <p class="swap">Swap 1 piece,once a month</p>
-                <p class="total-pieces">Giving you up to 5 total pieces/month</p>
-                <h5 class="subscription-amount">$99/month</h5>
+                <p class="swap">Swap 1 piece,<br>once a month</p>
+                <span class='info'><i class="fa fa-info-circle"></i></span>
+                <div class='content'>
+                    <p>4 pieces:</br> A swap means that once a month, you can send back 1 piece of your 4 piece box and receive something different. Whether it’s because you want something new or you’re just not in love with one of the items, a swap gives
+                        you flexibility and more variety.</p>
+                </div>
+
+                <p class="total-pieces">Giving you up to 5 total<br> pieces/month</p>
+                <h4 class="subscription-amount">$99/month</h4>
             </div>
         </div>
     </div>
@@ -78,53 +92,65 @@
                 <p id="regular-price">Regular Price $128.95 + tax</p>
                 <button class="btn btn-1 btn-plan-2">Pre-Pay 1 Month</button>
             </div>
-
-            <div class="card card2">
-                <div>
-                    <h4>PRE-PAY 1 MONTH: $99/MONTH PLAN</h4>
-                    <p id="saving">YOU SAVE</p>
-                    <h2 class="montserrat-font-family underline">$29</h2>
+            <div>
+                <div class="card card2 most-popular-card">
+                    <div>
+                        <h4>PRE-PAY 1 MONTH: $99/MONTH PLAN</h4>
+                        <p id="saving">YOU SAVE</p>
+                        <h2 class="montserrat-font-family underline">$29</h2>
+                    </div>
+                    <div id="description">
+                        <p><img src="./images/tick.jpg"> month of $99/month plan</p>
+                        <p><img src="./images/tick.jpg">4 - 5 total pieces</p>
+                        <p><img src="./images/tick.jpg">Free shipping for 1 month</p>
+                        <p class="underline"><img src="./images/tick.jpg">Free insurance for 1 month</p>
+                    </div>
+                    <h5 class="inconsolata-font-family">PLUS</h5>
+                    <p class="extra-feature inconsolata-font-family"><b>9 Extra months of</b></p>
+                    <ul id="additional-offer">
+                        <li><img src="./images/star.jpg">Free shipping</li>
+                        <li><img src="./images/star.jpg">Free insurance</li>
+                        <li><img src="./images/star.jpg"><b>Subscription price guarantee*</b></li>
+                    </ul>
+                    <h3 class="inconsolata-font-family"><b>YOUR PRICE: $99</b><span id="tax">+ tax</span></h3>
+                    <p id="regular-price">Regular Price $128.95 + tax</p>
+                    <button class="btn btn-plan-3">Pre-Pay 1 Month</button>
                 </div>
-                <div id="description">
-                    <p><img src="./images/tick.jpg"> month of $99/month plan</p>
-                    <p><img src="./images/tick.jpg">4 - 5 total pieces</p>
-                    <p><img src="./images/tick.jpg">Free shipping for 1 month</p>
-                    <p class="underline"><img src="./images/tick.jpg">Free insurance for 1 month</p>
+                <p class="terms">
+                    *you are not subject to any price increases for 12 months from date of first shipment
+                </p>
+                <div class="most-popular">
+                    Most Popular
                 </div>
-                <h5 class="inconsolata-font-family">PLUS</h5>
-                <p class="extra-feature inconsolata-font-family"><b>9 Extra months of</b></p>
-                <ul id="additional-offer">
-                    <li><img src="./images/star.jpg">Free shipping</li>
-                    <li><img src="./images/star.jpg">Free insurance</li>
-                    <li><img src="./images/star.jpg"><b>Subscription price guarantee*</b></li>
-                </ul>
-                <h3 class="inconsolata-font-family"><b>YOUR PRICE: $99</b><span id="tax">+ tax</span></h3>
-                <p id="regular-price">Regular Price $128.95 + tax</p>
-                <button class="btn btn-plan-3">Pre-Pay 1 Month</button>
             </div>
 
-            <div class="card card2">
-                <div>
-                    <h4>PRE-PAY 1 MONTH: $99/MONTH PLAN</h4>
-                    <p id="saving">YOU SAVE</p>
-                    <h2 class="montserrat-font-family underline">$29</h2>
+            <div>
+                <div class="card card2">
+                    <div>
+                        <h4>PRE-PAY 1 MONTH: $99/MONTH PLAN</h4>
+                        <p id="saving">YOU SAVE</p>
+                        <h2 class="montserrat-font-family underline">$29</h2>
+                    </div>
+                    <div id="description">
+                        <p><img src="./images/tick.jpg"> month of $99/month plan</p>
+                        <p><img src="./images/tick.jpg">4 - 5 total pieces</p>
+                        <p><img src="./images/tick.jpg">Free shipping for 1 month</p>
+                        <p class="underline"><img src="./images/tick.jpg">Free insurance for 1 month</p>
+                    </div>
+                    <h5 class="inconsolata-font-family">PLUS</h5>
+                    <p class="extra-feature inconsolata-font-family"><b>9 Extra months of</b></p>
+                    <ul id="additional-offer" class="inconsolata-font-family">
+                        <li><img src="./images/star.jpg">Free shipping</li>
+                        <li><img src="./images/star.jpg">Free insurance</li>
+                        <li><img src="./images/star.jpg"><b>Subscription price guarantee*</b></li>
+                    </ul>
+                    <h3 class="inconsolata-font-family"><b>YOUR PRICE: $99</b><span id="tax">+ tax</span></h3>
+                    <p id="regular-price">Regular Price $128.95 + tax</p>
+                    <button class="btn btn-plan-4">Pre-Pay 1 Month</button>
                 </div>
-                <div id="description">
-                    <p><img src="./images/tick.jpg"> month of $99/month plan</p>
-                    <p><img src="./images/tick.jpg">4 - 5 total pieces</p>
-                    <p><img src="./images/tick.jpg">Free shipping for 1 month</p>
-                    <p class="underline"><img src="./images/tick.jpg">Free insurance for 1 month</p>
-                </div>
-                <h5 class="inconsolata-font-family">PLUS</h5>
-                <p class="extra-feature inconsolata-font-family"><b>9 Extra months of</b></p>
-                <ul id="additional-offer" class="inconsolata-font-family">
-                    <li><img src="./images/star.jpg">Free shipping</li>
-                    <li><img src="./images/star.jpg">Free insurance</li>
-                    <li><img src="./images/star.jpg"><b>Subscription price guarantee*</b></li>
-                </ul>
-                <h3 class="inconsolata-font-family"><b>YOUR PRICE: $99</b><span id="tax">+ tax</span></h3>
-                <p id="regular-price">Regular Price $128.95 + tax</p>
-                <button class="btn btn-plan-4">Pre-Pay 1 Month</button>
+                <p class="terms">
+                    *you are not subject to any price increases for 12 months from date of first shipment
+                </p>
             </div>
         </div>
     </section>
@@ -132,7 +158,7 @@
     <footer>
         <div class="container inconsolata-font-family">
             <p>Have Questions? We have the answers.</p>
-            <a href="#">FAQ's</a>
+            <a href="./faq.html">FAQ's</a>
         </div>
     </footer>
 
